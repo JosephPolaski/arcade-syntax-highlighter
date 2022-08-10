@@ -1,0 +1,25 @@
+{
+  "name": "arcade-syntax-highlighter",
+  "displayName": "Arcade Syntax Highlighter",
+  "description": "A syntax highlighter for the Arcade expression language.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "Arcade",
+      "aliases": ["Arcade Expression Language", "Arcade"],
+      "extensions": [".ash"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "Arcade",
+      "scopeName": "source.ash",
+      "path": "./syntaxes/Arcade.tmLanguage.json"
+    }]
+  }
+}
